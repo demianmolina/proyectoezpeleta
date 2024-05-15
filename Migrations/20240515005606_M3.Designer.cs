@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProyectoCelular.Data;
 
@@ -11,9 +12,11 @@ using ProyectoCelular.Data;
 namespace ProyectoCelular.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240515005606_M3")]
+    partial class M3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -329,11 +332,13 @@ namespace ProyectoCelular.Migrations
 
             modelBuilder.Entity("ProyectoCelular.Models.EjercicioFisico", b =>
                 {
-                    b.HasOne("ProyectoCelular.Models.TipoEjercicio", null)
+                    b.HasOne("ProyectoCelular.Models.TipoEjercicio", "TipoEjercicio")
                         .WithMany("EjercicioFisicos")
                         .HasForeignKey("TipoEjercicioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("TipoEjercicio");
                 });
 
             modelBuilder.Entity("ProyectoCelular.Models.TipoEjercicio", b =>

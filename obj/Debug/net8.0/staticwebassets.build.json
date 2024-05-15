@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Dzv0YIGiQgV8vqj3VDMYP94JVkjIXKvbybfKbqPZurs=",
+  "Hash": "M4ZkKOApFT11n/vwEXGWmPiyqIfwqbZ2Z98AyYs89zg=",
   "Source": "ProyectoCelular",
   "BasePath": "_content/ProyectoCelular",
   "Mode": "Default",
@@ -1233,12 +1233,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\PC\\Desktop\\Programacion3\\ProyectoCelular\\wwwroot\\js\\ejerciciosfisico-1.0.0.js",
+      "Identity": "C:\\Users\\PC\\Desktop\\Programacion3\\ProyectoCelular\\wwwroot\\js\\ejerciciosfisicos-1.0.0.js",
       "SourceId": "ProyectoCelular",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\PC\\Desktop\\Programacion3\\ProyectoCelular\\wwwroot\\",
       "BasePath": "_content/ProyectoCelular",
-      "RelativePath": "js/ejerciciosfisico-1.0.0.js",
+      "RelativePath": "js/ejerciciosfisicos-1.0.0.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1249,7 +1249,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\ejerciciosfisico-1.0.0.js"
+      "OriginalItemSpec": "wwwroot\\js\\ejerciciosfisicos-1.0.0.js"
     },
     {
       "Identity": "C:\\Users\\PC\\Desktop\\Programacion3\\ProyectoCelular\\wwwroot\\js\\site.js",

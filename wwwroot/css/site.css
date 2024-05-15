@@ -8,9 +8,35 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus,
+.btn:hover, .btn-link.nav-link:hover, .form-control:hover, .form-check-input:hover {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
+
+/* Celulares */
+@media (max-width: 576px) {
+  .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus,
+  .btn:hover, .btn-link.nav-link:hover, .form-control:hover, .form-check-input:hover {
+    box-shadow: 0 0 0 0.05rem white, 0 0 0 0.2rem #258cfb;
+  }
+}
+
+/* Tablets*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus,
+  .btn:hover, .btn-link.nav-link:hover, .form-control:hover, .form-check-input:hover {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 769px) {
+  .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus,
+  .btn:hover, .btn-link.nav-link:hover, .form-control:hover, .form-check-input:hover {
+    box-shadow: 0 0 0 0.15rem white, 0 0 0 0.3rem #258cfb;
+  }
+}
+
 
 html {
   position: relative;
@@ -18,5 +44,9 @@ html {
 }
 
 body {
+  background-color: green;
   margin-bottom: 60px;
+  color: aliceblue;
+  font-weight: 600;
 }
+

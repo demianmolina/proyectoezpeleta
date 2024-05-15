@@ -18,16 +18,17 @@ namespace ProyectoCelular.Models
         public DateTime Fin { get; set; }
 
         public EstadoEmocional EstadoEmocionalInicio { get; set; }
+        public EstadoEmocional EstadoEmocionalFin { get; set; }
 
         public string? Observaciones { get; set; }
 
 
-        public virtual TipoEjercicio TipoEjercicio { get; set; }
+    //    public virtual TipoEjercicio TipoEjercicio { get; set; }
 
 }
 
 public class VistaEjercicios {
-    public int IdEjercicioFisico { get; set; }
+    public int EjercicioFisicoID { get; set; }
     public int TipoEjercicioID { get; set; }
     public string? EjercicioNombre { get; set; }
     public string InicioString { get; set; }

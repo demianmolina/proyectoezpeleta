@@ -1,5 +1,5 @@
 @{
-  ViewData["Title"] = "Tipo de Ejercicios";
+  ViewData["Title"] = "Ejercicios Fisicos";
 }
 
 <div class="text-center">
@@ -8,7 +8,7 @@
 
 <!-- Button trigger modal -->
 <div class="mb-2">
-  <button type="button" class="btn btn-primary" onclick="NuevoRegistro()" data-bs-toggle="modal"
+  <button type="button" class="btn btn-primary" onclick="NuevoEjercicioFisico()" data-bs-toggle="modal"
     data-bs-target="#ModalEjercicioFisico">
     Nuevo Registro
   </button>
@@ -27,8 +27,8 @@
           <div class="row">
             <input type="hidden" id="EjercicioFisicoID" value="0" />
             <div class="mb-3 col-12">
-              <label for="TipoEjercicioID" class="form-label">Tipo de Ejercicio</label>
-              @* @Html.DropDownList("TipoEjercicioID", null, htmlAttributes: new { @class = "form-control" }) *@
+              <label for="TipoEjercicioId" class="form-label">Tipo de Ejercicio</label>
+               @Html.DropDownList("TipoEjercicioId", null, htmlAttributes: new { @class = "form-control" }) 
             </div>
 
             <div class="mb-3 col-6">
@@ -53,12 +53,17 @@
               @Html.DropDownList("EstadoEmocionalFin", null, htmlAttributes: new { @class = "form-control" })
             </div>
           </div>
+          
+          <div class="mb-3">
+            <label for="Observaciones" class="form-label">Observaciones</label>
+            <textarea id="Observaciones" class="form-control" rows="3"></textarea>
+          </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" onclick="LimpiarModal()" class="btn btn-secondary"
           data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" onclick="GuardarRegistro()" class="btn btn-primary">Guardar</button>
+        <button type="button" onclick="GuardadoEjerciciosFisicos()" class="btn btn-primary">Guardar</button>
       </div>
     </div>
   </div>
@@ -67,15 +72,22 @@
 <table class="table table-light table-bordered table-striped table-condensed">
   <thead>
     <tr>
-      <th>Descripción</th>
+      <th>Ejercicio Físico</th>
+      <th>Inicio</th>
+      <th>Fin</th>
+      <th>Estado Emocional al Iniciar</th>
+      <th>Estado Emocional al Finalizar</th>
+      <th>Observaciones</th>
       <th style="width: 70px"></th>
       <th style="width: 70px"></th>
     </tr>
   </thead>
-  <tbody id="tbody-tipoejercicios">
+  <tbody id="tbody-ejerciciosfisicos">
   </tbody>
 </table>
 
 @section Scripts {
-   <script src="~/js/tipoejercicios-1.0.0.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="~/js/ejerciciosfisicos-1.0.0.js"></script>
+
 }

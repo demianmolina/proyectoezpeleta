@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoCelular")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1700ee62856fd0ab0e07e9c7482fb3034217b3e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoCelular")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoCelular")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

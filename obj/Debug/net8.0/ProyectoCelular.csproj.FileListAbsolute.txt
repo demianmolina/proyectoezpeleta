@@ -286,3 +286,4 @@ C:\Users\PC\Desktop\Programacion3\ProyectoCelular\bin\Debug\net8.0\runtimes\win\
 C:\Users\PC\Desktop\Programacion3\ProyectoCelular\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\PC\Desktop\Programacion3\ProyectoCelular\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\PC\Desktop\Programacion3\ProyectoCelular\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\PC\Desktop\Programacion3\ProyectoCelular\obj\Debug\net8.0\ProyectoCelular.sourcelink.json

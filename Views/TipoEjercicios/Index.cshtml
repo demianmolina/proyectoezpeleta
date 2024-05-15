@@ -2,6 +2,8 @@
   ViewData["Title"] = "LISTADO DE EJERCICIOS";
 }
 
+
+
 <div class="text-center">
   <h1 class="display-4">Tipo de Ejercicio</h1>
 
@@ -29,7 +31,7 @@
        <div class="modal-body">
          <form>
            <div class="mb-3">
-             <input type="hidden" id="TipoEjercicioID" value="0" />
+             <input type="hidden" id="TipoEjercicioId" value="0" />
              <label for="descripcion" class="form-label">Descripción</label>
              <input type="text" class="form-control" id="descripcion" style="text-transform:uppercase"
               placeholder="Nombre del ejercicio">
@@ -60,4 +62,5 @@
 
 @section Scripts {
   <script src="~/js/tipoejercicios-1.0.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 }
